@@ -1,7 +1,52 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 <!doctype html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-こんにちは（テスト）—このページが見えたら公開成功です。
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ご意見のお願い | HOSPITAL_NAME</title>
+  <meta name="description" content="HOSPITAL_NAMEのご意見受付ページ（公開クチコミ／非公開の投書箱）。">
+  <!-- デモ中は検索に出したくない場合だけ↓をON（本番で削除） -->
+  <!-- <meta name="robots" content="noindex,nofollow"> -->
+  <style>
+    :root{--bg:#f7f8fa;--card:#fff;--text:#1f2937;--muted:#6b7280;--primary:#2563eb;--primary-quiet:#e6efff;--danger:#ef4444;--danger-quiet:#ffe8e8;}
+    *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,Arial,sans-serif;color:var(--text);background:var(--bg)}
+    .wrap{max-width:720px;margin:0 auto;padding:20px 16px 48px} h1{font-size:28px;margin:12px 0 8px} p{line-height:1.7;margin:8px 0}
+    .card{background:var(--card);border-radius:16px;padding:18px;box-shadow:0 6px 20px rgba(0,0,0,.06);margin-top:14px}
+    .btn{display:block;text-align:center;text-decoration:none;font-weight:700;margin-top:14px;padding:14px 16px;border-radius:12px}
+    .btn-primary{background:var(--primary);color:#fff}.btn-muted{background:#e5e7eb;color:#111827}
+    .note{font-size:12px;color:var(--muted);margin-top:10px}
+    .pill{display:inline-block;font-size:12px;padding:4px 8px;border-radius:999px;margin-bottom:6px}
+    .pill-blue{background:var(--primary-quiet);color:#1e40af}.pill-red{background:var(--danger-quiet);color:#991b1b}
+    footer{margin-top:24px;font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>HOSPITAL_NAME</h1>
+
+    <div class="card" aria-labelledby="public-title">
+      <div class="pill pill-blue">公開クチコミ（Google）</div>
+      <h2 id="public-title" style="margin:6px 0 4px;font-size:20px">ご意見・ご感想のお願い</h2>
+      <p>本日はご来院いただき、ありがとうございます。<br>
+      <b>良かった点</b>や<b>改善した方がよい点</b>を、率直にお聞かせください。いただいた内容はスタッフ全員で共有し、診療体制の改善に活かします。</p>
+      <a class="btn btn-primary" href="REVIEW_URL" target="_blank" rel="noopener" aria-label="Googleでクチコミを書く">Googleでクチコミを書く（30秒）</a>
+      <p class="note">※公開クチコミには氏名・連絡先・診療内容などの個人情報を書かないでください。</p>
+    </div>
+
+    <div class="card" aria-labelledby="private-title">
+      <div class="pill pill-red">非公開の投書箱</div>
+      <h2 id="private-title" style="margin:6px 0 4px;font-size:20px">不快な思いをされた方へ</h2>
+      <p>この度は当院の対応によりご不快な思いをおかけし、誠に申し訳ございません。詳細を<b>非公開フォーム</b>でお聞かせください。内容は医師・看護師・事務で共有し、再発防止に取り組みます。いただいたご意見が公開されることはありません。</p>
+      <a class="btn btn-muted" href="PRIVATE_FORM_URL" target="_blank" rel="noopener" aria-label="非公開のご意見フォームへ">非公開のご意見フォームへ</a>
+    </div>
+
+    <footer>
+      <p>このページから外部サイト（Google/Googleフォーム）へ移動します。景品等による依頼は行っていません。<br>
+      個別の医療相談は診療時間内にお電話でも承ります。</p>
+    </footer>
+  </div>
+</body>
+</html>
 
